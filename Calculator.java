@@ -21,10 +21,15 @@ public class Calculator{
             float multi = numberOne*numberTwo;
             System.out.println(multi);
         }
-        else if (operationChoice == 4){
+
+        if (operationChoice == 4 && numberTwo != 0){
             float divide = numberOne/numberTwo;
             System.out.println(divide);
         }
+        else{
+           System.out.println("Error: Divide by Zero");
+        }
+
         
 
     }
